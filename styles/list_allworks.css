@@ -1,0 +1,184 @@
+#list-thumb-flexbox{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(4 , minmax(200px, 0.25fr));
+}
+
+
+.list-thumb-elem{
+    display: flex;
+    width: 90%;
+    margin: 1em;
+    padding: 0.4em;
+    aspect-ratio: 9/11;
+    border-radius: 1.15em;
+    background-color: rgba(255, 255, 255, 0);
+    //background-image: url("../resources/list_background_img.png");
+    //background-size: cover;
+    //border: 0px #5ce6f0 solid;
+    transition: all 250ms ease-in;
+}
+.list-thumb-elem:hover{
+    //border: 2px #e95513 dotted;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.list-thumb-elem-inside{ 
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    //align-items: center;
+    //justify-content: center;
+    width: 100%;
+    //background: #E6EDEF;
+    aspect-ratio: 1;
+    border-radius: 1em;
+    //transition: all 700ms ease-in-out;
+}
+.list-thumb-elem-inside:hover{
+    //background: #EFEDE6;
+    //border-radius: 3em;
+}
+
+.list-thumb-anchor2work{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.list-thumb-img{
+    width: 85%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin: auto;
+
+    /* from iOS App Icon 22.8% */
+    border-radius: 23.8%;
+    transition: all 200ms ease-in-out;
+}
+.list-thumb-elem:hover .list-thumb-img{
+    width: 88%;
+    border-radius: 1%;
+}
+
+.list-thumb-title{
+    padding-top: 0.2rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    font-size: 1.2rem;
+    //margin: auto;
+}
+
+.list-thumb-subtitle{
+    padding-top: 0.2rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    font-size: 0.8rem;
+    //margin: auto;
+}
+
+.list-thumb-name{
+    padding-top: 0.2rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    font-size: 0.975rem;
+    //margin: auto;
+}
+
+.list-thumb-genre{
+    font-size: 0.8rem;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    //margin: auto;
+}
+
+
+@media (max-aspect-ratio: 1/1.01){
+    #list-thumb-flexbox{ 
+        display: grid;
+        width: 95%;
+        margin: auto;
+        grid-template-columns: repeat(2 , minmax(30%, 0.5fr));
+    }
+    .list-thumb-elem{
+        display: flex;
+        width: 95%;
+        margin: 0.15em;
+        padding: 0.4em;
+        aspect-ratio: 9/13;
+        border-radius: 1.15em;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0;
+    }
+    .list-thumb-elem:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .list-thumb-elem-inside{ 
+        display: flex;
+        padding: 1em;
+        flex-direction: column;
+        //align-items: center;
+        //justify-content: center;
+        width: 100%;
+        //background: #E6EDEF;
+        aspect-ratio: 1;
+        border-radius: 1em;
+        //transition: all 700ms ease-in-out;
+    }
+
+    .list-thumb-anchor2work{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .list-thumb-img{
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        margin: auto;
+
+        /* from iOS App Icon 22.8% */
+        border-radius: 1.785%;
+        transition: 0;
+    }
+    .list-thumb-elem:hover .list-thumb-img{
+        width: 90%;
+        border-radius: 1.785%;
+    }
+
+    .list-thumb-title{
+        padding-top: 0.2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-size: 0.75rem;
+        //margin: auto;
+    }
+
+    .list-thumb-subtitle{
+        padding-top: 0.2rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        font-size: 0.8rem;
+        //margin: auto;
+    }
+
+    .list-thumb-name{
+        padding-top: 0.2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-size: 0.7rem;
+        //margin: auto;
+    }
+
+    .list-thumb-genre{
+        font-size: 0.675rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        //margin: auto;
+    }
+}
